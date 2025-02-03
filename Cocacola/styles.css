@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'CocaColaFont';
+    src: url('fonts/CocaColaFont.woff2') format('woff2'),
+         url('fonts/CocaColaFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RESET DI BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #ed1c16;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+header .logo {
+    max-width: 250px;
+    margin-bottom: 1rem;
+}
+
+.coca-cola-font {
+    font-family: 'CocaColaFont', cursive;
+    font-size: 2.5rem;
+    display: block;
+}
+
+.report-sintesi {
+    padding: 20px;
+  }
+  
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    color: #2c3e50;
+  }
+  
+  p {
+    line-height: 1.6;
+    color: #34495e;
+  }
+  
+/* NAVIGAZIONE */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* SEZIONI PRINCIPALI */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+section h2 {
+    color: #ed1c16;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* FILTRO PER ANNI */
+.filter-container {
+    margin-bottom: 1rem;
+}
+
+#report-year {
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ed1c16;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#report-year:hover, #report-year:focus {
+    border-color: #c41614;
+    background-color: #f8f8f8;
+    outline: none;
+}
+
+/* PULSANTE DI DOWNLOAD */
+.download-button {
+    display: inline-block;
+    background-color: #ed1c16;
+    color: #fff;
+    padding: 1rem 1.8rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #c41614;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.contact-link {
+    color: #ed1c16;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* MEDIA QUERY per schermi piccoli */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .coca-cola-font {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .download-button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Coca-Cola – Report di Sostenibilità</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER CON LOGO E TITOLO IN FONT COCA-COLA -->
+  <header>
+    <img src="images/coca-cola-logo.png" alt="Logo Coca-Cola" class="logo">
+    <span class="coca-cola-font">Report di Sostenibilità</span>
+    <nav>
+      <ul>
+        <li><a href="#introduzione">Introduzione</a></li>
+        <li><a href="#sintesi">Sintesi</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="images/banner.jpg" alt="Banner Coca-Cola" class="banner">
+
+  <main>
+    <section id="introduzione">
+      <h2>Introduzione</h2>
+      <p>
+        Coca-Cola è una delle aziende leader a livello mondiale nel settore delle bevande,
+        con una storia centenaria alle spalle. Da sempre legata all’innovazione e alla vicinanza
+        ai consumatori, negli ultimi anni l’azienda ha intensificato i propri sforzi per
+        promuovere la sostenibilità ambientale e sociale.
+      </p>
+      <p>
+        Questo sito ti permette di scoprire i punti cardine del nostro impegno per il pianeta e la comunità,
+        oltre a scaricare il Report di Sostenibilità più recente.
+      </p>
+    </section>
+
+    <section id="sintesi" class="report-sintesi">
+      <h2>Sintesi del Report</h2>
+    
+      <div class="columns">
+        <article>
+          <h3>Ambito Ambientale</h3>
+          <p>
+            Nel report vengono illustrate le principali iniziative per ridurre l’impatto ecologico
+            dei processi produttivi, tra cui la riduzione della plastica e l’ottimizzazione dell’uso di acqua ed energia.
+            Protezione delle Risorse e Innovazione Sostenibile
+            Coca-Cola sta adottando misure concrete per minimizzare il proprio impatto ambientale, concentrandosi su tre aree chiave: gestione dell’acqua, riduzione della plastica e abbattimento delle emissioni di carbonio.
+    
+            Gestione dell’acqua: L'azienda si impegna a restituire alla natura il 100% dell’acqua utilizzata nei suoi prodotti attraverso programmi di conservazione, riuso e rigenerazione delle risorse idriche. In molte regioni, Coca-Cola sostiene progetti per migliorare l’accesso all’acqua potabile e proteggere bacini idrici locali.
+            Packaging sostenibile: Coca-Cola investe nello sviluppo di bottiglie in plastica riciclata al 100% (rPET) e nella riduzione del consumo di materiali vergini. Inoltre, promuove il riciclo attraverso il programma "World Without Waste", con l’obiettivo di raccogliere e riciclare ogni bottiglia o lattina venduta entro il 2030.
+            Riduzione delle emissioni: L’azienda sta adottando fonti di energia rinnovabile negli impianti produttivi e ottimizzando la logistica per abbattere le emissioni di gas serra. L’obiettivo è raggiungere la neutralità carbonica lungo tutta la catena del valore.
+          </p>
+        </article>
+    
+        <article>
+          <h3>Ambito Sociale</h3>
+          <p>
+            Coca-Cola si impegna a migliorare la vita delle persone attraverso programmi di inclusione, istruzione e supporto alle comunità locali.
+    
+            Parità di genere e inclusione: L’azienda promuove la diversità nei luoghi di lavoro e supporta le donne impritrici con iniziative come il programma “5by20”, che mira a fornire a 5 milioni di donne strumenti e opportunità economiche.
+            Accesso all’istruzione e al lavoro: Coca-Cola collabora con ONG e governi per offrire programmi educativi e formativi, specialmente nei Paesi in via di sviluppo. L’obiettivo è fornire alle nuove generazioni competenze per il futuro.
+            Impegno nelle comunità locali: L’azienda contribuisce a progetti di sviluppo sociale, investendo in infrastrutture, donando aiuti umanitari e sostenendo iniziative di responsabilità sociale in tutto il mondo.
+          </p>
+        </article>
+    
+        <article>
+          <h3>Ambito Economico</h3>
+          <p>
+            Coca-Cola promuove un modello di crescita che unisce competitività e responsabilità sociale, garantendo un impatto positivo sull’economia globale.
+    
+            Sostegno alle economie locali: L’azienda crea milioni di posti di lavoro diretti e indiretti lungo la filiera, collaborando con fornitori, distributori e piccoli rivenditori in oltre 200 Paesi.
+            Innovazione e sostenibilità finanziaria: Coca-Cola investe in ricerca e sviluppo per migliorare l'efficienza dei processi produttivi e ridurre gli sprechi, mantenendo un equilibrio tra redditività e impatto sociale.
+            Trasparenza e responsabilità: L’azienda adotta pratiche di governance responsabile, assicurando la trasparenza nelle operazioni e nel rispetto delle normative ambientali e sociali.
+            Un Impegno Concreto per il Futuro
+            Attraverso queste iniziative, Coca-Cola dimostra il proprio impegno nel costruire un futuro più sostenibile, integrando innovazione, responsabilità ambientale e supporto alle comunità. L’obiettivo è garantire uno sviluppo che non solo rispetti l’ambiente, ma che migliori la qualità della vita delle persone e delle economie locali.
+          </p>
+        </article>
+      </div>
+    </section>
+    
+
+    <section id="download">
+      <h2>Scarica il Report</h2>
+      <p>Seleziona l'anno del report che desideri scaricare:</p>
+    
+      <!-- Selettore per scegliere l'anno -->
+      <label for="report-year">Anno:</label>
+      <select id="report-year">
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+    
+      <!-- Pulsante per scaricare il report selezionato -->
+      <br><br>
+      <a href="reports/bilancio_di_sostenibilita_coca_cola_hbc_italia_2023.pdf" class="download-button">Scarica il PDF</a>
+    </section>
+
+    <script src="script.js"></script>
+    
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Coca-Cola Company</p>
+    <p>Contatti: <a href="mailto:info@cocacola.com" class="contact-link">info@cocacola.com</a></p>
+  </footer>
+
+
+</body>
+</html>
